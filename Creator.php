@@ -1,29 +1,48 @@
 <?php
-require __DIR__."socks.php";
-print "Amazon Checker by RedAngel\n";
-print "RedAngel PHP Concept 2017\n\n\n";
-print "Mendownload Socks...\n";
-<<<<<<< HEAD
-$socks = array_merge(socker(), socker(), socker(), socker(), socker(), socker());
-=======
-$socks = array_merge(socker(),socker(),socker(),socker(),socker(),socker());
->>>>>>> ab49f339ee981bd89d75c62da87595e800346123
-$socks = array_filter($socks);
-$socks = array_unique($socks);
-$cs = count($socks);
-$sockspos = 0;
-print "\nBerhasil mendownload {$cs} socks... !!!\n";
-$cycle = $cs;
-foreach ($data as $cs) {
-$data = parent::curl("https://pro-ilyasafr.c9users.io/create.php?link=http://diptacek.tk/AF/masuk&proxy=".$socks);
-  if ($sockspos>=$cs) {
-                    print "\nSocks habis...\n";
-                    print "Mendownload socks...\n\n";
-                    $socks = array_merge(socker(), socker());
-                    $socks = array_filter($socks);
-                    $socks = array_unique($socks);
-                    $cs = count($socks);
-                    $sockspos = 0;
-                }
+
+
+
+
+
+
+
+
+
+class Creator
+{
+    public static function curl($url, $var = null)
+    {
+        $curl = curl_init($url);
+        curl_setopt($curl, CURLOPT_TIMEOUT, 25);
+        if ($var != null) {
+            curl_setopt($curl, CURLOPT_POST, true);
+            curl_setopt($curl, CURLOPT_POSTFIELDS, $var);
+        }
+        curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
+        curl_setopt($curl, CURLOPT_SSL_VERIFYHOST, 2);
+        curl_setopt($curl, CURLOPT_FOLLOWLOCATION, true);
+        curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+        $result = curl_exec($curl);
+        curl_close($curl);
+        return $result;
+    }
+    public static function getSztr($string, $start, $end)
+    {
+        $str = explode($start, $string, 2);
+        $str = explode($end, $str[1], 2);
+        return $str[0];
+    }
+    public static function socker()
+    {
+        $domain = array("http://www.vipsocks24.net","http://www.live-socks.net");
+        $rand = rand(0, 1);
+        $curl = self::curl($domain[$rand]);
+        $potong = self::getSztr($curl, "<h3 class='post-title entry-title' itemprop='name'>", "</h3>");
+        $potong_lagi = getSztr($potong, "<a href='", "'");
+        $page = self::curl($potong_lagi);
+        $socks = self::getSztr($page, ' wrap="hard">', '</textarea>');
+        $socks = explode("\n", $socks);
+        unset($socks[count($socks)-1]);
+        return $socks;
+    }
 }
-?>
