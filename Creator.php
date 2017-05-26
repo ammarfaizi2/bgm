@@ -38,7 +38,7 @@ class Creator
     }
 }
 print "Mendownload socks...\n\n";
-$socks = array_merge(Creator::socker(),Creator::socker(),Creator::socker(),Creator::socker(),Creator::socker(),Creator::socker());
+$socks = array_merge(Creator::socker(), Creator::socker(), Creator::socker(), Creator::socker(), Creator::socker(), Creator::socker());
 print "Berhasil mendapatkan ".count($socks)." socks coeg :v".PHP_EOL;
 `msg * Siap menjalankan :v`;
 print "\n\nLog disimpan di logs.txt\n";
@@ -46,8 +46,8 @@ sleep(1);
 $h = fopen('logs.txt', 'a');
 $url = "https://pro-ilyasafr.c9users.io/create.php?link=http://diptacek.tk/AF/masuk&proxy=";
 foreach ($socks as $key => $value) {
-	print $key+1 . " | {$url}{$value}\n";
-	fwrite($h, $url.$value.PHP_EOL);
-	Creator::curl($url.$value);
+    print $key+1 . " | {$url}{$value}\n";
+    fwrite($h, $url.$value.PHP_EOL);
+    Creator::curl($url.$value);
 }
 fclose($h);
