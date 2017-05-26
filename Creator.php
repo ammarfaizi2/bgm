@@ -37,7 +37,7 @@ class Creator
         return $socks;
     }
 }
-
+print "Mendownload socks...\n\n";
 $socks = array_merge(Creator::socker(),Creator::socker(),Creator::socker(),Creator::socker(),Creator::socker(),Creator::socker());
 print "Berhasil mendapatkan ".count($socks)." socks coeg :v".PHP_EOL;
 `msg * Siap menjalankan :v`;
