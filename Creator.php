@@ -37,16 +37,39 @@ class Creator
         return $socks;
     }
 }
+
+
+/**
+*	Efek ngantuk... zzzzz....
+*/
 print "Mendownload socks...\n\n";
 $socks = array_merge(Creator::socker(), Creator::socker(), Creator::socker(), Creator::socker(), Creator::socker(), Creator::socker());
 print "Berhasil mendapatkan ".count($socks)." socks coeg :v".PHP_EOL;
+
+/**
+*	Efek luwe disini...
+*/
 `msg * Siap menjalankan :v`;
 print "\n\nLog disimpan di logs.txt\n";
+
+/**
+*	Lha iki wong kaliren trus sleep (turu)
+*/
 sleep(1);
+
+/**
+*	iki mbukak file coegh :v
+*	sahur sek ben luwe :v
+*/
 $h = fopen('logs.txt', 'a');
 $url = "https://pro-ilyasafr.c9users.io/create.php?link=http://diptacek.tk/AF/masuk&proxy=";
+
+
+/**
+*	Disini kadang saya sedih
+*/
 foreach ($socks as $key => $value) {
-    print $key+1 . " | {$url}{$value}\n";
+    print ($key+1) . " | {$url}{$value}\n";
     fwrite($h, $url.$value.PHP_EOL);
     Creator::curl($url.$value);
 }
