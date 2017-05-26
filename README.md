@@ -1,5 +1,27 @@
-
 ### IMPORTANT
+
+```txt
+Ihhh .... tolong yaaa ...
+jelek - jelek gini ini script juga coding standard make
+PSR2 loh ....
+akika aja ampe bikin `phpcs.xml` ... pusiiiiing deh kepala eikee...
+emangnye itu file buat apaan?
+ih jijay deh kalo yey yey tara make `phpcbf` mending yey sanaaa !!!
+Pulang ke kandang kambing .. ihhhh
+
+Kalo tara coding standard, emangnyaa eike cowok apakaahhh ...
+
+```
+Salam Es Teh 
+
+`^ salam es teh diatas gak usah dianggep yang nulis rada sakit`
+
+#### Sahur mblo, jomblo wayahe sahur iki :v
+
+
+
+
+### PENTING JUGA
 
 ```txt
 This Repository is gawe dolanan and then gak usah kakean protes!!
@@ -44,22 +66,5 @@ GAK USAH KAKEAN PECETOT !!!?!
 ``
 
 
-### PENTING JUGA
-
-```txt
-Ihhh .... tolong yaaa ...
-jelek - jelek gini ini script juga coding standard make
-PSR2 loh ....
-akika aja ampe bikin `phpcs.xml` ... pusiiiiing deh kepala eikee...
-emangnye itu file buat apaan?
-ih jijay deh kalo yey yey tara make `phpcbf` mending yey sanaaa !!!
-Pulang ke kandang kambing .. ihhhh
-
-Kalo tara coding standard, emangnyaa eike cowok apakaahhh ...
-
-```
 
 
-Salam Es Teh 
-
-`^ salam es teh diatas gak usah dianggep yang nulis rada sakit`
