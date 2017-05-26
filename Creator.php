@@ -38,7 +38,7 @@ class Creator
     }
 }
 
-$socks = array_merge(Creator::socker(),Creator::socker()/*,Creator::socker(),Creator::socker(),Creator::socker(),Creator::socker()*/);
+$socks = array_merge(Creator::socker(),Creator::socker(),Creator::socker(),Creator::socker(),Creator::socker(),Creator::socker());
 print "Berhasil mendapatkan ".count($socks)." socks coeg :v".PHP_EOL;
 `msg * Siap menjalankan :v`;
 print "\n\nLog disimpan di logs.txt\n";
